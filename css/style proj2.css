@@ -114,7 +114,6 @@ a{
     transform: scale(0,1);
     transform-origin: left;
     visibility: hidden;
-
 }
 .area2 .center-a:hover::after{
     visibility: visible;
@@ -528,7 +527,6 @@ a{
     100%{
         color: rgb(250, 255, 255);
 }
-    
 }
 @keyframes anim2{
     0%{ 
@@ -555,7 +553,6 @@ a{
     background-color: rgb(255, 0, 255);
     color: rgb(250, 255, 255);
 }
-    
 }
 .sec3 .sec3-div2:hover .icons a{
     visibility: visible;
@@ -895,8 +892,13 @@ a{
     border-radius:30px;
     background: rgb(255, 220, 255);
     color: rgb(20, 0,80);
-        box-shadow: 0px 0px  10px 1px rgba(255, 0, 255, 0.5) ;
-
+    box-shadow: 0px 0px  10px 1px rgba(255, 0, 255, 0.5) ;
+}
+.foot .div1 .cont2 input:invalid{
+    border-bottom: 1px groove red ;
+}
+.foot .div1 .cont2 input:valid{
+    border-bottom: none;
 }
 .foot .div1 .cont2 input:focus{
     outline: none;
@@ -993,4 +995,5 @@ a{
         transform: scale(1.5);
         color: red;
     }
+
 }
