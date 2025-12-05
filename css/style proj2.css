@@ -44,7 +44,7 @@ a{
     height: 0px;
     right: 0;
     top: 0;
-    background: linear-gradient( to bottom,rgb(255, 0, 255),rgb(40,0,150));
+    background: linear-gradient( to bottom,rgb(255, 0, 255));
     transition: 0.5s;
     opacity: 0;
 }
@@ -61,7 +61,7 @@ a{
     height: 0px;
     left: 0;
     bottom: 0;
-    background: linear-gradient( to top,rgb(255, 0, 255),blue);
+    background: linear-gradient( to top,rgb(255, 0, 255));
     transition: 1s;
 }
 .hd1-div a:hover::before{
@@ -91,7 +91,10 @@ a{
 }
 .area1 img{
     height: 75px;
-    filter: drop-shadow(2px 2px 15px beige);
+    filter: drop-shadow(2px 2px 7px beige);
+}
+.area1 img:hover{
+    filter: drop-shadow(2px 2px 5px rgb(255, 0, 255));
 }
 /* ------------------ */
 .area2 a{
@@ -119,7 +122,7 @@ a{
     visibility: visible;
     opacity: 1;
     transform: scale(1,1);
-    border-radius: 25px 5px;
+    border-radius: 25px 3px;
 }
 .area2 .center-a::before{
     content: "";
@@ -141,7 +144,7 @@ a{
     visibility: visible;
     opacity: 1;
     transform: scale(1,1);
-    border-radius: 25px 5px;
+    border-radius: 25px 3px;
 }
 .hd2-i:hover i{
     transform: rotateY(180deg);
@@ -154,7 +157,7 @@ a{
 }
 /* --------------page-menue------------- */
 .page-menue i{
-    padding-left: 5px;
+    padding-left: 7px;
     font-size: 15px;
 }
 .page-menue{
@@ -244,7 +247,7 @@ a{
 .hd3{
     height: 40px;
     background-color: rgb(0, 0, 60);
-    color: rgb(255, 230, 255);
+    color: rgb(255, 200, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -302,7 +305,7 @@ a{
     color: rgb(40, 0, 150);
     padding-bottom: 20px;
 }
-.main-cont a{
+/* .main-cont a{
     background: rgb(0, 0, 60);
     color: rgb(255, 220, 255);
     font-size: 26px;
@@ -315,7 +318,30 @@ a{
     background: rgb(255, 220, 255);
     box-shadow: 0px 0px  10px 1px rgb(255, 0, 255) ;
     border: 0.5px solid rgb(0, 0, 60);
+} */
+/* //////////////////// */
+.btn {
+    font-size: 1.2rem;
+    padding: 20px 35px;
+    border: none;
+    outline: none;
+    border-radius: 35px 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background:linear-gradient(to right,rgb(44, 44, 146),rgb(0, 0, 60)) ;
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    -webkit-box-reflect: below  10px linear-gradient(to bottom , rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.4) 100%);
 }
+.btn:active {
+    scale: 0.92;
+}
+.btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(to right,rgb(147, 0, 147) 0%,rgb(239, 0, 239) 80%);
+    border: 2px solid rgb(193, 0, 189);
+}
+/* //////////////////// */
 /* /////////////////-----------sec-2-----------///////////////// */
 .sec2-hd{
     width: fit-content;
@@ -326,10 +352,6 @@ a{
     color: rgb(40, 0, 150);
     text-shadow: 3px 3px 22px rgba(255, 0, 255, 0.7);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    transition: 1s;
-}
-.sec2-hd:hover{
-    transform: scale(1.1,1.1);
     transition: 1s;
 }
 .hr1{
@@ -359,7 +381,6 @@ a{
     position: relative;
     box-shadow: 10px 10px 25px 2px rgb(84, 84, 84) ;
 }
-
 .sec2 > div::after{
     position: absolute;
     content: "";
@@ -469,7 +490,7 @@ a{
     height: 100%;
     font-size: 29px;
     color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
+    background: rgb(248, 150, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -482,7 +503,7 @@ a{
 }
 .sec3 .sec3-div2 .icons2 a{
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 140, 249);
+    /* background-color: rgb(255, 140, 249); */
 }
 .sec3 .sec3-div2 .icons2 a:hover{
     color: rgb(0, 0, 60);
@@ -493,66 +514,9 @@ a{
 .sec3 .sec3-div2 .icons4 a{
     color: rgb(166, 138, 96);
 }
-
 .sec3-div2 .icons a:hover{
-    animation: anim1 0.4s;
     background-color: rgb(255, 0, 255);
     color: rgb(250, 255, 255);
-}
-@keyframes anim1{
-    0%{ 
-    /* background-color: rgb(255, 0, 255); */
-    color: rgb(250, 255, 255);
-}
-    15%{
-    color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
-}
-    30%{
-    /* background-color: rgb(255, 0, 255); */
-    color: rgb(250, 255, 255);
-}
-    45%{
-    color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
-}
-    60%{
-    /* background-color: rgb(255, 0, 255); */
-    color: rgb(250, 255, 255);
-}
-    75%{ 
-    color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
-}
-    100%{
-        color: rgb(250, 255, 255);
-}
-}
-@keyframes anim2{
-    0%{ 
-    background-color: rgb(255, 0, 255);
-    color: rgb(250, 255, 255);
-}
-20%{
-    color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
-}
-    40%{
-    background-color: rgb(255, 0, 255);
-    color: rgb(250, 255, 255);
-}
-    60%{
-    color: rgb(0, 0, 60);
-    background: rgb(251, 207, 255);
-}
-    80%{
-    background-color: rgb(255, 0, 255);
-    color: rgb(250, 255, 255);
-}
-    100%{ 
-    background-color: rgb(255, 0, 255);
-    color: rgb(250, 255, 255);
-}
 }
 .sec3 .sec3-div2:hover .icons a{
     visibility: visible;
@@ -563,7 +527,7 @@ a{
     background: url(../image/blue2.jpg);
 }
 .sec3 .sec3-div2-2::after{
-    background: url(../image/white2.jpg);
+    background: url(../image/white\ w2.jpg);
 }
 .sec3 .sec3-div2-3::after{
     background: url(../image/black2.jpg);
@@ -602,7 +566,7 @@ a{
     flex-direction: column;
 }
 .sec3 span{
-    text-decoration: line-through;
+    text-decoration:line-through;
     padding-left: 10px;
 }
 .sec3-div2:hover .a2-1{
@@ -621,7 +585,7 @@ a{
     position: absolute;
     font-size: 30px;
     opacity: 0.7;
-    color: rgb(40, 0, 150)
+    color: rgba(40, 0, 150, 0.75)
 }
 .sec3 > a:hover{
     opacity: 1;
@@ -635,7 +599,6 @@ a{
     top: 40%;
     right: -30px;
 }
-
 /* ////////////--------section-4--------//////////// */
 .sec4{
     position: relative;
@@ -733,6 +696,9 @@ a{
     opacity: 1;
     transform: translateY(0%);
 }
+.sec5-div2-2::after{
+    background: url(../image/white.jpg);
+}
 /* ///////////-------section-6-------/////////// */
 .section6{
     width: 100%;
@@ -758,6 +724,15 @@ a{
     width: 100%;
     height: 400px;
     transition: 0.2s;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+}
+.sec6-div .im1{
+    border-radius: 50px 0 0 0;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.7);
+}
+.sec6-div .im3{
+    border-radius: 0 50px 0 0;
+    box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.7);
 }
 .sec6-div img:hover{
     transition: 0.2s;
@@ -772,7 +747,7 @@ a{
 }
 .sec6-div a{
     font-size: 23px;
-    color: rgb(255, 0, 255);
+    color: rgb(245, 0, 255);
     font-weight: bold;
 }
 .sec6-div p{
@@ -791,7 +766,7 @@ a{
     color: rgb(255, 0, 255);
     transform: scale(1.1);
     transition: 0.2s;
-    text-shadow: 3px 3px 20px rgb(255, 120, 255);
+    text-shadow: 3px 3px 20px rgba(255, 83, 255, 0.548);
 }
 .sec6-div:hover .aa1{
     color: black;
@@ -799,10 +774,10 @@ a{
 }
 .sec6-div:hover .aa2{
     color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 10px rgb(100, 0, 100);
+    text-shadow: 3px 3px 10px rgb(147, 31, 147);
 }
 .sec6-div:hover .aa3{
-    color: rgb(0, 0, 110);
+    color: rgb(40, 0, 150);
     text-shadow: 5px 5px 15px rgb(255, 0, 255);
 }
 /* ////////////-------section-7-------//////////// */
@@ -859,7 +834,7 @@ a{
 .foot{
     display: flex;
     flex-direction: column;
-    color: rgb(255, 200, 255);
+    color: rgb(255, 190, 255);
 }
 .foot > div{
     display: flex;
@@ -875,11 +850,11 @@ a{
 }
 .foot .div1 .cont1 p{
     padding-top: 15px;
-    text-shadow: 0px 0px  10px  rgba(255, 0, 255, 0.8) ;
+    text-shadow: 0px 0px  10px  rgba(255, 0, 255, 0.5) ;
 }
 .foot .div1 .cont1 h2{
     font-size: 27px;
-    text-shadow: 0px 0px  10px  rgba(255, 0, 255, 0.8) ;
+    text-shadow: 0px 0px  10px  rgba(255, 0, 255, 0.5) ;
 }
 .foot .div1 .cont2{
     display: flex;
@@ -893,17 +868,19 @@ a{
     background: rgb(255, 220, 255);
     color: rgb(20, 0,80);
     box-shadow: 0px 0px  10px 1px rgba(255, 0, 255, 0.5) ;
+    border: 0;
 }
-.foot .div1 .cont2 input:invalid{
-    border-bottom: 1px groove red ;
-}
-.foot .div1 .cont2 input:valid{
-    border-bottom: none;
+.foot .div1 .cont2 input:hover{
+    outline: none;
+    box-shadow: 0px 0px  10px 1px rgba(255, 0, 255, 0.6) ;
+    border: 2px solid rgb(0, 0, 60);
+    transform: scale(1.02);
 }
 .foot .div1 .cont2 input:focus{
     outline: none;
     box-shadow: 0px 0px  10px 1px rgb(255, 0, 255) ;
-    border: 0.5px solid rgb(0, 0, 60);
+    border: 2px solid rgb(0, 0, 60);
+    transform: scale(1.03);
 }
 .foot .div1 .cont2 .sub{
     width: 150px;
@@ -911,24 +888,127 @@ a{
     margin-left: 10px;
     line-height: 50px;
     text-align: center;
-    font-size: 26px;
+    font-size: 23px;
     border-radius: 30px 5px;
     color: rgb(0, 0,60);
     background: rgb(255, 220, 255);
-    box-shadow: 0px 0px  10px 1px rgb(255, 0, 255) ;
+    box-shadow: 0px 0px  10px 1px rgba(255, 0, 255, 0.7) ;
     border: 0.5px solid rgb(0, 0, 60);
 }
-.foot .div1 .cont3 a{
+.foot .div1 .cont2 .sub:hover{
+    outline: none;
+    box-shadow: 0px 0px  10px 1px rgb(255, 0, 255) ;
+    border: 2px solid rgb(0, 0, 60);
+    transform: scale(1.02);
+}
+.foot .div1 .cont2 .sub:active{
+    scale: 0.92;
+}
+/* .foot .div1 .cont3 a{
     color: rgb(255, 220, 255);
     text-shadow: 2px 2px  10px  rgba(255, 0, 255, 0.7);
     font-size: 25px;
     margin-left: 15px;
 }
 .foot .div1 .cont3 i:hover{
-    color: rgb(255, 142, 255);
+    color: rgb(255, 190, 255);
     transform: scale(1.1,1.1);
-    text-shadow: 2px 2px  20px  rgb(255, 0, 255) ;
+    text-shadow: 2px 2px  20px  rgb(255, 20, 255) ;
+} */
+ ul {
+  list-style: none;
 }
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 8px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #0012b4;
+  transition: all 0.5s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgba(255, 0, 255, 0.4);
+  transform: scale(1.1);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: rgb(255, 255, 255);
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
+  background-color: #128c6b;
+}
+.example-2 .icon-content a[data-social="facebook"] .filled,
+.example-2 .icon-content a[data-social="facebook"] ~ .tooltip {
+  background-color: #0051ff;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+/* ////////////////////// */
 .foot .div3{
     justify-content: center;
 }
@@ -938,19 +1018,18 @@ a{
     min-height: 250px;
     margin-top: 50px;
     border-bottom: 1px solid rgb(255, 0, 255);
-    /* text-shadow:2px 2px  20px  rgb(255, 0, 255); */
     padding-bottom: 50px;
 }
 .foot .div2 img{
-    height: 80px;
+    height: 90px;
     margin-top: -20px;
-    filter: drop-shadow(2px 2px 15px rgb(0, 0, 255));
+    filter: drop-shadow(2px 2px 40px rgba(255, 0, 255, 0.641));
 }
 .foot .div2 h3{
     margin-bottom: 25px;
     font-size: 22px;
     color: rgb(255, 120, 255);
-    text-shadow:2px 2px  20px  rgba(255, 0, 255, 0.826);
+    text-shadow:2px 2px  20px  rgba(255, 0, 255, 0.5);
 }
 .foot .div2 a{
     display: block;
@@ -962,7 +1041,7 @@ a{
 .foot .div2 a:hover{
     text-decoration: underline;
     transform: scale(1.07);
-    text-shadow:2px 2px  20px  rgb(255, 0, 255);
+    text-shadow:2px 2px  20px  rgba(255, 0, 255, 0.573);
     transition: 0.5s;
 }
 .foot .div3{
@@ -989,11 +1068,10 @@ a{
 @keyframes anima{
      0%{
         color: rgb(0, 0, 60);
-        transform: scale(1);
+        transform: scale(0.75);      
     }
     100%{
         transform: scale(1.5);
         color: red;
     }
-
 }
